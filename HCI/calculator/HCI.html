@@ -1,0 +1,1854 @@
+<HTML>
+<HEAD>
+<TITLE>HCI</TITLE>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<SCRIPT Language="JavaScript">
+
+
+function getSelectedValue(selectList){
+   return selectList[selectList.selectedIndex].value
+}
+
+function calculateTotal(frm){
+	
+	var subject1 = getSelectedValue(frm.Subject1)
+	var level1 = getSelectedValue(frm.Level1)
+	var grade1 =  getSelectedValue(frm.Grade1)
+	var totalSubject1 = 0
+	
+	var subject2 = getSelectedValue(frm.Subject2)
+	var level2 = getSelectedValue(frm.Level2)
+	var grade2 =  getSelectedValue(frm.Grade2)
+	var totalSubject2 = 0
+
+	var subject3 = getSelectedValue(frm.Subject3)
+	var level3 = getSelectedValue(frm.Level3)
+	var grade3 = getSelectedValue(frm.Grade3)
+	var totalSubject3 = 0
+	
+	var subject4 = getSelectedValue(frm.Subject4)
+	var level4 = getSelectedValue(frm.Level4)
+	var grade4 = getSelectedValue(frm.Grade4)
+	var totalSubject4 = 0
+	
+	var subject5 = getSelectedValue(frm.Subject5)
+	var level5 = getSelectedValue(frm.Level5)
+	var grade5 = getSelectedValue(frm.Grade5)
+	var totalSubject5 = 0
+	
+	var subject6 = getSelectedValue(frm.Subject6)
+	var level6 = getSelectedValue(frm.Level6)
+	var grade6 = getSelectedValue(frm.Grade6)
+	var totalSubject6 = 0
+	
+	var subject7 = getSelectedValue(frm.Subject7)
+	var level7 = getSelectedValue(frm.Level7)
+	var grade7 = getSelectedValue(frm.Grade7)
+	var totalSubject7 = 0
+	
+	var lcvp = getSelectedValue(frm.LCVP)
+	var gradelcvp = getSelectedValue(frm.GradeLCVP)
+	var totalLCVP = 0
+
+	var total = 0
+	
+/* -------------------Subject 1 --------------------------*/
+	if (subject1 == "Choose Subject")
+	{
+		totalSubject1 = totalSubject1 + 0;
+	}
+		
+	else if (subject1 == "Maths" && level1 == "Higher")
+	{
+		if (grade1 == "A1")
+		{
+			totalSubject1 = totalSubject1 + 125;
+		}
+		if (grade1 == "A2")
+		{
+			totalSubject1 = totalSubject1 + 115;
+		}
+		if (grade1 == "B1")
+		{
+			totalSubject1 = totalSubject1 + 110;
+		}
+		if (grade1 == "B2")
+		{
+			totalSubject1 = totalSubject1 + 105;
+		}
+		if (grade1 == "B3")
+		{
+			totalSubject1 = totalSubject1 + 100;
+		}
+		if (grade1 == "C1")
+		{
+			totalSubject1 = totalSubject1 + 95;
+		}
+		if (grade1 == "C2")
+		{
+			totalSubject1 = totalSubject1 + 90;
+		}
+		if (grade1 == "C3")
+		{
+			totalSubject1 = totalSubject1 + 85;
+		}
+		if (grade1 == "D1")
+		{
+			totalSubject1 = totalSubject1 + 80;
+		}
+		if (grade1 == "D2")
+		{
+			totalSubject1 = totalSubject1 + 75;
+		}
+		if (grade1 == "D3")
+		{
+			totalSubject1 = totalSubject1 + 70;
+		}
+		if (grade1 == "E" || grade1 == "F" || grade1 == "NG")
+		{
+			totalSubject1 = totalSubject1 + 0;
+		}	
+	}
+	
+	else
+	{
+		if (subject1 != "Maths" && level1 == "Higher")
+		{
+			if (grade1 == "A1")
+			{
+				totalSubject1 = totalSubject1 + 100;
+			}
+			if (grade1 == "A2")
+			{
+				totalSubject1 = totalSubject1 + 90;
+			}
+			if (grade1 == "B1")
+			{
+				totalSubject1 = totalSubject1 + 85;
+			}
+			if (grade1 == "B2")
+			{
+				totalSubject1 = totalSubject1 + 80;
+			}
+			if (grade1 == "B3")
+			{
+				totalSubject1 = totalSubject1 + 75;
+			}
+			if (grade1 == "C1")
+			{
+				totalSubject1 = totalSubject1 + 70;
+			}
+			if (grade1 == "C2")
+			{
+				totalSubject1 = totalSubject1 + 65;
+			}
+			if (grade1 == "C3")
+			{
+				totalSubject1 = totalSubject1 + 60;
+			}
+			if (grade1 == "D1")
+			{
+				totalSubject1 = totalSubject1 + 55;
+			}
+			if (grade1 == "D2")
+			{
+				totalSubject1 = totalSubject1 + 50;
+			}
+			if (grade1 == "D3")
+			{
+				totalSubject1 = totalSubject1 + 45;
+			}
+			if (grade1 == "E" || grade1 == "F" || grade1 == "NG")
+			{
+				totalSubject1 = totalSubject1 + 0;
+			}	
+		}
+
+		if (level1 == "Ordinary")
+		{
+			if (grade1 == "A1")
+			{
+				totalSubject1 = totalSubject1 + 60;
+			}
+			if (grade1 == "A2")
+			{
+				totalSubject1 = totalSubject1 + 50;
+			}
+			if (grade1 == "B1")
+			{
+				totalSubject1 = totalSubject1 + 45;
+			}
+			if (grade1 == "B2")
+			{
+				totalSubject1 = totalSubject1 + 40;
+			}
+			if (grade1 == "B3")
+			{
+				totalSubject1 = totalSubject1 + 35;
+			}
+			if (grade1 == "C1")
+			{
+				totalSubject1 = totalSubject1 + 30;
+			}
+			if (grade1 == "C2")
+			{
+				totalSubject1 = totalSubject1 + 25;
+			}
+			if (grade1 == "C3")
+			{
+				totalSubject1 = totalSubject1 + 20;
+			}
+			if (grade1 == "D1")
+			{
+				totalSubject1 = totalSubject1 + 15;
+			}
+			if (grade1 == "D2")
+			{
+				totalSubject1 = totalSubject1 + 10;
+			}
+			if (grade1 == "D3")
+			{
+				totalSubject1 = totalSubject1 + 5;
+			}
+			if (grade1 == "E" || grade1 == "F" || grade1 == "NG")
+			{
+				totalSubject1 = totalSubject1 + 0;
+			}			
+		}
+
+		if (subject1 == "Maths" && level1 == "Foundation")
+		{
+			if (grade1 == "A1")
+			{
+				totalSubject1 = totalSubject1 + 20;
+			}
+			if (grade1 == "A2")
+			{
+				totalSubject1 = totalSubject1 + 15;
+			}
+			if (grade1 == "B1")
+			{
+				totalSubject1 = totalSubject1 + 10;
+			}
+			if (grade1 == "B2")
+			{
+				totalSubject1 = totalSubject1 + 5;
+			}
+			if (grade1 == "B3" || grade1 == "C1" || grade1 == "C2" || grade1 == "C3" || grade1 == "D1" || grade1 == "D2" || grade1 == "D3" || grade1 == "E" || grade1 == "F" || grade1 == "NG")
+			{
+				totalSubject1 = totalSubject1 + 0;
+			}
+		}
+		
+		if (subject1 != "Maths" && level1 == "Foundation")
+		{
+			totalSubject1 = totalSubject1 + 0;
+		}
+	}
+
+/* -------------------Subject 2-------------------------*/
+	if (subject2 == "Choose Subject")
+	{
+		totalSubject2 = totalSubject2 + 0;
+	}
+	
+	else if (subject2 == "Maths" && level2 == "Higher")
+	{
+		if (grade2 == "A1")
+		{
+			totalSubject2 = totalSubject2 + 125;
+		}
+		if (grade2 == "A2")
+		{
+			totalSubject2 = totalSubject2 + 115;
+		}
+		if (grade2 == "B1")
+		{
+			totalSubject2 = totalSubject2 + 110;
+		}
+		if (grade2 == "B2")
+		{
+			totalSubject2 = totalSubject2 + 105;
+		}
+		if (grade2 == "B3")
+		{
+			totalSubject2 = totalSubject2 + 100;
+		}
+		if (grade2 == "C1")
+		{
+			totalSubject2 = totalSubject2 + 95;
+		}
+		if (grade2 == "C2")
+		{
+			totalSubject2 = totalSubject2 + 90;
+		}
+		if (grade2 == "C3")
+		{
+			totalSubject2 = totalSubject2 + 85;
+		}
+		if (grade2 == "D1")
+		{
+			totalSubject2 = totalSubject2 + 80;
+		}
+		if (grade2 == "D2")
+		{
+			totalSubject2 = totalSubject2 + 75;
+		}
+		if (grade2 == "D3")
+		{
+			totalSubject2 = totalSubject2 + 70;
+		}
+		if (grade2 == "E" || grade2 == "F" || grade2 == "NG")
+		{
+			totalSubject2 = totalSubject2 + 0;
+		}
+	}
+	
+	else
+	{
+		if (subject2 != "Maths" && level2 == "Higher")
+		{
+			if (grade2 == "A1")
+			{
+				totalSubject2 = totalSubject2 + 100;
+			}
+			if (grade2 == "A2")
+			{
+				totalSubject2 = totalSubject2 + 90;
+			}
+			if (grade2 == "B1")
+			{
+				totalSubject2 = totalSubject2 + 85;
+			}
+			if (grade2 == "B2")
+			{
+				totalSubject2 = totalSubject2 + 80;
+			}
+			if (grade2 == "B3")
+			{
+				totalSubject2 = totalSubject2 + 75;
+			}
+			if (grade2 == "C1")
+			{
+				totalSubject2 = totalSubject2 + 70;
+			}
+			if (grade2 == "C2")
+			{
+				totalSubject2 = totalSubject2 + 65;
+			}
+			if (grade2 == "C3")
+			{
+				totalSubject2 = totalSubject2 + 60;
+			}
+			if (grade2 == "D1")
+			{
+				totalSubject2 = totalSubject2 + 55;
+			}
+			if (grade2 == "D2")
+			{
+				totalSubject2 = totalSubject2 + 50;
+			}
+			if (grade2 == "D3")
+			{
+				totalSubject2 = totalSubject2 + 45;
+			}
+			if (grade2 == "E" || grade2 == "F" || grade2 == "NG")
+			{
+				totalSubject2 = totalSubject2 + 0;
+			}
+		}
+
+		if (level2 == "Ordinary")
+		{
+			if (grade2 == "A1")
+			{
+				totalSubject2 = totalSubject2 + 60;
+			}
+			if (grade2 == "A2")
+			{
+				totalSubject2 = totalSubject2 + 50;
+			}
+			if (grade2 == "B1")
+			{
+				totalSubject2 = totalSubject2 + 45;
+			}
+			if (grade2 == "B2")
+			{
+				totalSubject2 = totalSubject2 + 40;
+			}
+			if (grade2 == "B3")
+			{
+				totalSubject2 = totalSubject2 + 35;
+			}
+			if (grade2 == "C1")
+			{
+				totalSubject2 = totalSubject2 + 30;
+			}
+			if (grade2 == "C2")
+			{
+				totalSubject2 = totalSubject2 + 25;
+			}
+			if (grade2 == "C3")
+			{
+				totalSubject2 = totalSubject2 + 20;
+			}
+			if (grade2 == "D1")
+			{
+				totalSubject2 = totalSubject2 + 15;
+			}
+			if (grade2 == "D2")
+			{
+				totalSubject2 = totalSubject2 + 10;
+			}
+			if (grade2 == "D3")
+			{
+				totalSubject2 = totalSubject2 + 5;
+			}
+			if (grade2 == "E" || grade2 == "F" || grade2 == "NG")
+			{
+				totalSubject2 = totalSubject2 + 0;
+			}
+		}
+
+		if (subject2 == "Maths" && level2 == "Foundation")
+		{
+			if (grade2 == "A1")
+			{
+				totalSubject2 = totalSubject2 + 20;
+			}
+			if (grade2 == "A2")
+			{
+				totalSubject2 = totalSubject2 + 15;
+			}
+			if (grade2 == "B1")
+			{
+				totalSubject2 = totalSubject2 + 10;
+			}
+			if (grade2 == "B2")
+			{
+				totalSubject2 = totalSubject2 + 5;
+			}
+			if (grade2 == "B3" || grade2 == "C1" || grade2 == "C2" || grade2 == "C3" || grade2 == "D1" || grade2 == "D2" || grade2 == "D3" || grade2 == "E" || grade2 == "F" || grade2 == "NG")
+			{
+				totalSubject2 = totalSubject2 + 0;
+			}
+		}
+		
+		if (subject2 != "Maths" && level2 == "Foundation")
+		{
+			totalSubject2 = totalSubject2 + 0;
+		}
+	}
+
+/* -------------------Subject 3 --------------------------*/
+	if (subject3 == "Choose Subject")
+	{
+		totalSubject3 = totalSubject3 + 0;
+	}
+	
+	else if (subject3 == "Maths" && level3 == "Higher")
+	{
+		if (grade3 == "A1")
+		{
+			totalSubject3 = totalSubject3 + 125;
+		}
+		if (grade3 == "A2")
+		{
+			totalSubject3 = totalSubject3 + 115;
+		}
+		if (grade3 == "B1")
+		{
+			totalSubject3 = totalSubject3 + 110;
+		}
+		if (grade3 == "B2")
+		{
+			totalSubject3 = totalSubject3 + 105;
+		}
+		if (grade3 == "B3")
+		{
+			totalSubject3 = totalSubject3 + 100;
+		}
+		if (grade3 == "C1")
+		{
+			totalSubject3 = totalSubject3 + 95;
+		}
+		if (grade3 == "C2")
+		{
+			totalSubject3 = totalSubject3 + 90;
+		}
+		if (grade3 == "C3")
+		{
+			totalSubject3 = totalSubject3 + 85;
+		}
+		if (grade3 == "D1")
+		{
+			totalSubject3 = totalSubject3 + 80;
+		}
+		if (grade3 == "D2")
+		{
+			totalSubject3 = totalSubject3 + 75;
+		}
+		if (grade3 == "D3")
+		{
+			totalSubject3 = totalSubject3 + 70;
+		}
+		if (grade3 == "E" || grade3 == "F" || grade3 == "NG")
+		{
+			totalSubject3 = totalSubject3 + 0;
+		}
+	}
+	
+	else
+	{
+		if (subject3 != "Maths" && level3 == "Higher")
+		{
+			if (grade3 == "A1")
+			{
+				totalSubject3 = totalSubject3 + 100;
+			}
+			if (grade3 == "A2")
+			{
+				totalSubject3 = totalSubject3 + 90;
+			}
+			if (grade3 == "B1")
+			{
+				totalSubject3 = totalSubject3 + 85;
+			}
+			if (grade3 == "B2")
+			{
+				totalSubject3 = totalSubject3 + 80;
+			}
+			if (grade3 == "B3")
+			{
+				totalSubject3 = totalSubject3 + 75;
+			}
+			if (grade3 == "C1")
+			{
+				totalSubject3 = totalSubject3 + 70;
+			}
+			if (grade3 == "C2")
+			{
+				totalSubject3 = totalSubject3 + 65;
+			}
+			if (grade3 == "C3")
+			{
+				totalSubject3 = totalSubject3 + 60;
+			}
+			if (grade3 == "D1")
+			{
+				totalSubject3 = totalSubject3 + 55;
+			}
+			if (grade3 == "D2")
+			{
+				totalSubject3 = totalSubject3 + 50;
+			}
+			if (grade3 == "D3")
+			{
+				totalSubject3 = totalSubject3 + 45;
+			}
+			if (grade3 == "E" || grade3 == "F" || grade3 == "NG")
+			{
+				totalSubject3 = totalSubject3 + 0;
+			}
+		}
+
+		if (level3 == "Ordinary")
+		{
+			if (grade3 == "A1")
+			{
+				totalSubject3 = totalSubject3 + 60;
+			}
+			if (grade3 == "A2")
+			{
+				totalSubject3 = totalSubject3 + 50;
+			}
+			if (grade3 == "B1")
+			{
+				totalSubject3 = totalSubject3 + 45;
+			}
+			if (grade3 == "B2")
+			{
+				totalSubject3 = totalSubject3 + 40;
+			}
+			if (grade3 == "B3")
+			{
+				totalSubject3 = totalSubject3 + 35;
+			}
+			if (grade3 == "C1")
+			{
+				totalSubject3 = totalSubject3 + 30;
+			}
+			if (grade3 == "C2")
+			{
+				totalSubject3 = totalSubject3 + 25;
+			}
+			if (grade3 == "C3")
+			{
+				totalSubject3 = totalSubject3 + 20;
+			}
+			if (grade3 == "D1")
+			{
+				totalSubject3 = totalSubject3 + 15;
+			}
+			if (grade3 == "D2")
+			{
+				totalSubject3 = totalSubject3 + 10;
+			}
+			if (grade3 == "D3")
+			{
+				totalSubject3 = totalSubject3 + 5;
+			}
+			if (grade3 == "E" || grade3 == "F" || grade3 == "NG")
+			{
+				totalSubject3 = totalSubject3 + 0;
+			}
+		}
+
+		if (subject3 == "Maths" && level3 == "Foundation")
+		{
+			if (grade3 == "A1")
+			{
+				totalSubject3 = totalSubject3 + 20;
+			}
+			if (grade3 == "A2")
+			{
+				totalSubject3 = totalSubject3 + 15;
+			}
+			if (grade3 == "B1")
+			{
+				totalSubject3 = totalSubject3 + 10;
+			}
+			if (grade3 == "B2")
+			{
+				totalSubject3 = totalSubject3 + 5;
+			}
+			if (grade3 == "B3" || grade3 == "C1" || grade3 == "C2" || grade3 == "C3" || grade3 == "D1" || grade3 == "D2" || grade3 == "D3" || grade3 == "E" || grade3 == "F" || grade3 == "NG")
+			{
+				totalSubject3 = totalSubject3 + 0;
+			}
+		}
+		
+		if (subject3 != "Maths" && level3 == "Foundation")
+		{
+			totalSubject3 = totalSubject3 + 0;
+		}
+	}
+
+/* -------------------Subject 4 --------------------------*/
+
+	if (subject4 == "Choose Subject")
+	{
+		totalSubject4 = totalSubject4 + 0;
+	}
+	
+	else if (subject4 == "Maths" && level4 == "Higher")
+	{
+		if (grade4 == "A1")
+		{
+			totalSubject4 = totalSubject4 + 125;
+		}
+		if (grade4 == "A2")
+		{
+			totalSubject4 = totalSubject4 + 115;
+		}
+		if (grade4 == "B1")
+		{
+			totalSubject4 = totalSubject4 + 110;
+		}
+		if (grade4 == "B2")
+		{
+			totalSubject4 = totalSubject4 + 105;
+		}
+		if (grade4 == "B3")
+		{
+			totalSubject4 = totalSubject4 + 100;
+		}
+		if (grade4 == "C1")
+		{
+			totalSubject4 = totalSubject4 + 95;
+		}
+		if (grade4 == "C2")
+		{
+			totalSubject4 = totalSubject4 + 90;
+		}
+		if (grade4 == "C3")
+		{
+			totalSubject4 = totalSubject4 + 85;
+		}
+		if (grade4 == "D1")
+		{
+			totalSubject4 = totalSubject4 + 80;
+		}
+		if (grade4 == "D2")
+		{
+			totalSubject4 = totalSubject4 + 75;
+		}
+		if (grade4 == "D3")
+		{
+			totalSubject4 = totalSubject4 + 70;
+		}
+		if (grade4 == "E" || grade4 == "F" || grade4 == "NG")
+		{
+			totalSubject4 = totalSubject4 + 0;
+		}
+	}
+	
+	else
+	{
+		if (subject4 != "Maths" && level4 == "Higher")
+		{
+			if (grade4 == "A1")
+			{
+				totalSubject4 = totalSubject4 + 100;
+			}
+			if (grade4 == "A2")
+			{
+				totalSubject4 = totalSubject4 + 90;
+			}
+			if (grade4 == "B1")
+			{
+				totalSubject4 = totalSubject4 + 85;
+			}
+			if (grade4 == "B2")
+			{
+				totalSubject4 = totalSubject4 + 80;
+			}
+			if (grade4 == "B3")
+			{
+				totalSubject4 = totalSubject4 + 75;
+			}
+			if (grade4 == "C1")
+			{
+				totalSubject4 = totalSubject4 + 70;
+			}
+			if (grade4 == "C2")
+			{
+				totalSubject4 = totalSubject4 + 65;
+			}
+			if (grade4 == "C3")
+			{
+				totalSubject4 = totalSubject4 + 60;
+			}
+			if (grade4 == "D1")
+			{
+				totalSubject4 = totalSubject4 + 55;
+			}
+			if (grade4 == "D2")
+			{
+				totalSubject4 = totalSubject4 + 50;
+			}
+			if (grade4 == "D3")
+			{
+				totalSubject4 = totalSubject4 + 45;
+			}
+			if (grade4 == "E" || grade4 == "F" || grade4 == "NG")
+			{
+				totalSubject4 = totalSubject4 + 0;
+			}
+		}
+
+		if (level4 == "Ordinary")
+		{
+			if (grade4 == "A1")
+			{
+				totalSubject4 = totalSubject4 + 60;
+			}
+			if (grade4 == "A2")
+			{
+				totalSubject4 = totalSubject4 + 50;
+			}
+			if (grade4 == "B1")
+			{
+				totalSubject4 = totalSubject4 + 45;
+			}
+			if (grade4 == "B2")
+			{
+				totalSubject4 = totalSubject4 + 40;
+			}
+			if (grade4 == "B3")
+			{
+				totalSubject4 = totalSubject4 + 35;
+			}
+			if (grade4 == "C1")
+			{
+				totalSubject4 = totalSubject4 + 30;
+			}
+			if (grade4 == "C2")
+			{
+				totalSubject4 = totalSubject4 + 25;
+			}
+			if (grade4 == "C3")
+			{
+				totalSubject4 = totalSubject4 + 20;
+			}
+			if (grade4 == "D1")
+			{
+				totalSubject4 = totalSubject4 + 15;
+			}
+			if (grade4 == "D2")
+			{
+				totalSubject4 = totalSubject4 + 10;
+			}
+			if (grade4 == "D3")
+			{
+				totalSubject4 = totalSubject4 + 5;
+			}
+			if (grade4 == "E" || grade4 == "F" || grade4 == "NG")
+			{
+				totalSubject4 = totalSubject4 + 0;
+			}
+		}
+
+		if (subject4 == "Maths" && level4 == "Foundation")
+		{
+			if (grade4 == "A1")
+			{
+				totalSubject4 = totalSubject4 + 20;
+			}
+			if (grade4 == "A2")
+			{
+				totalSubject4 = totalSubject4 + 15;
+			}
+			if (grade4 == "B1")
+			{
+				totalSubject4 = totalSubject4 + 10;
+			}
+			if (grade4 == "B2")
+			{
+				totalSubject4 = totalSubject4 + 5;
+			}
+			if (grade4 == "B3" || grade4 == "C1" || grade4 == "C2" || grade4 == "C3" || grade4 == "D1" || grade4 == "D2" || grade4 == "D3" || grade4 == "E" || grade4 == "F" || grade4 == "NG")
+			{
+				totalSubject4 = totalSubject4 + 0;
+			}
+		}
+		
+		if (subject4 != "Maths" && level4 == "Foundation")
+		{
+			totalSubject4 = totalSubject4 + 0;
+		}
+	}
+
+/* -------------------Subject 5 --------------------------*/
+
+	if (subject5 == "Choose Subject")
+	{
+		totalSubject5 = totalSubject5 + 0;
+	}
+	
+	else if (subject5 == "Maths" && level5 == "Higher")
+	{
+		if (grade5 == "A1")
+		{
+			totalSubject5 = totalSubject5 + 125;
+		}
+		if (grade5 == "A2")
+		{
+			totalSubject5 = totalSubject5 + 115;
+		}
+		if (grade5 == "B1")
+		{
+			totalSubject5 = totalSubject5 + 110;
+		}
+		if (grade5 == "B2")
+		{
+			totalSubject5 = totalSubject5 + 105;
+		}
+		if (grade5 == "B3")
+		{
+			totalSubject5 = totalSubject5 + 100;
+		}
+		if (grade5 == "C1")
+		{
+			totalSubject5 = totalSubject5 + 95;
+		}
+		if (grade5 == "C2")
+		{
+			totalSubject5 = totalSubject5 + 90;
+		}
+		if (grade5 == "C3")
+		{
+			totalSubject5 = totalSubject5 + 85;
+		}
+		if (grade5 == "D1")
+		{
+			totalSubject5 = totalSubject5 + 80;
+		}
+		if (grade5 == "D2")
+		{
+			totalSubject5 = totalSubject5 + 75;
+		}
+		if (grade5 == "D3")
+		{
+			totalSubject5 = totalSubject5 + 70;
+		}
+		if (grade5 == "E" || grade5 == "F" || grade5 == "NG")
+		{
+			totalSubject5 = totalSubject5 + 0;
+		}
+	}
+	
+	else
+	{
+		if (subject5 != "Maths" && level5 == "Higher")
+		{
+			if (grade5 == "A1")
+			{
+				totalSubject5 = totalSubject5 + 100;
+			}
+			if (grade5 == "A2")
+			{
+				totalSubject5 = totalSubject5 + 90;
+			}
+			if (grade5 == "B1")
+			{
+				totalSubject5 = totalSubject5 + 85;
+			}
+			if (grade5 == "B2")
+			{
+				totalSubject5 = totalSubject5 + 80;
+			}
+			if (grade5 == "B3")
+			{
+				totalSubject5 = totalSubject5 + 75;
+			}
+			if (grade5 == "C1")
+			{
+				totalSubject5 = totalSubject5 + 70;
+			}
+			if (grade5 == "C2")
+			{
+				totalSubject5 = totalSubject5 + 65;
+			}
+			if (grade5 == "C3")
+			{
+				totalSubject5 = totalSubject5 + 60;
+			}
+			if (grade5 == "D1")
+			{
+				totalSubject5 = totalSubject5 + 55;
+			}
+			if (grade5 == "D2")
+			{
+				totalSubject5 = totalSubject5 + 50;
+			}
+			if (grade5 == "D3")
+			{
+				totalSubject5 = totalSubject5 + 45;
+			}
+			if (grade5 == "E" || grade5 == "F" || grade5 == "NG")
+			{
+				totalSubject5 = totalSubject5 + 0;
+			}
+		}
+
+		if (level5 == "Ordinary")
+		{
+			if (grade5 == "A1")
+			{
+				totalSubject5 = totalSubject5 + 60;
+			}
+			if (grade5 == "A2")
+			{
+				totalSubject5 = totalSubject5 + 50;
+			}
+			if (grade5 == "B1")
+			{
+				totalSubject5 = totalSubject5 + 45;
+			}
+			if (grade5 == "B2")
+			{
+				totalSubject5 = totalSubject5 + 40;
+			}
+			if (grade5 == "B3")
+			{
+				totalSubject5 = totalSubject5 + 35;
+			}
+			if (grade5 == "C1")
+			{
+				totalSubject5 = totalSubject5 + 30;
+			}
+			if (grade5 == "C2")
+			{
+				totalSubject5 = totalSubject5 + 25;
+			}
+			if (grade5 == "C3")
+			{
+				totalSubject5 = totalSubject5 + 20;
+			}
+			if (grade5 == "D1")
+			{
+				totalSubject5 = totalSubject5 + 15;
+			}
+			if (grade5 == "D2")
+			{
+				totalSubject5 = totalSubject5 + 10;
+			}
+			if (grade5 == "D3")
+			{
+				totalSubject5 = totalSubject5 + 5;
+			}
+			if (grade5 == "E" || grade5 == "F" || grade5 == "NG")
+			{
+				totalSubject5 = totalSubject5 + 0;
+			}
+		}
+
+		if (subject5 == "Maths" && level5 == "Foundation")
+		{
+			if (grade5 == "A1")
+			{
+				totalSubject5 = totalSubject5 + 20;
+			}
+			if (grade5 == "A2")
+			{
+				totalSubject5 = totalSubject5 + 15;
+			}
+			if (grade5 == "B1")
+			{
+				totalSubject5 = totalSubject5 + 10;
+			}
+			if (grade5 == "B2")
+			{
+				totalSubject5 = totalSubject5 + 5;
+			}
+			if (grade5 == "B3" || grade5 == "C1" || grade5 == "C2" || grade5 == "C3" || grade5 == "D1" || grade5 == "D2" || grade5 == "D3" || grade5 == "E" || grade5 == "F" || grade5 == "NG")
+			{
+				totalSubject5 = totalSubject5 + 0;
+			}
+		}
+		
+		if (subject5 != "Maths" && level5 == "Foundation")
+		{
+			totalSubject5 = totalSubject5 + 0;
+		}
+	}
+	
+/* -------------------Subject 6 --------------------------*/
+
+	if (subject6 == "Choose Subject")
+	{
+		totalSubject6 = totalSubject6 + 0;
+	}
+	
+	else if (subject6 == "Maths" && level6 == "Higher")
+	{
+		if (grade6 == "A1")
+		{
+			totalSubject6 = totalSubject6 + 125;
+		}
+		if (grade6 == "A2")
+		{
+			totalSubject6 = totalSubject6 + 115;
+		}
+		if (grade6 == "B1")
+		{
+			totalSubject6 = totalSubject6 + 110;
+		}
+		if (grade6 == "B2")
+		{
+			totalSubject6 = totalSubject6 + 105;
+		}
+		if (grade6 == "B3")
+		{
+			totalSubject6 = totalSubject6 + 100;
+		}
+		if (grade6 == "C1")
+		{
+			totalSubject6 = totalSubject6 + 95;
+		}
+		if (grade6 == "C2")
+		{
+			totalSubject6 = totalSubject6 + 90;
+		}
+		if (grade6 == "C3")
+		{
+			totalSubject6 = totalSubject6 + 85;
+		}
+		if (grade6 == "D1")
+		{
+			totalSubject6 = totalSubject6 + 80;
+		}
+		if (grade6 == "D2")
+		{
+			totalSubject6 = totalSubject6 + 75;
+		}
+		if (grade6 == "D3")
+		{
+			totalSubject6 = totalSubject6 + 70;
+		}
+		if (grade6 == "E" || grade6 == "F" || grade6 == "NG")
+		{
+			totalSubject6 = totalSubject6 + 0;
+		}
+	}
+		
+	else
+	{
+		if (subject6 != "Maths" && level6 == "Higher")
+		{
+			if (grade6 == "A1")
+			{
+				totalSubject6 = totalSubject6 + 100;
+			}
+			if (grade6 == "A2")
+			{
+				totalSubject6 = totalSubject6 + 90;
+			}
+			if (grade6 == "B1")
+			{
+				totalSubject6 = totalSubject6 + 85;
+			}
+			if (grade6 == "B2")
+			{
+				totalSubject6 = totalSubject6 + 80;
+			}
+			if (grade6 == "B3")
+			{
+				totalSubject6 = totalSubject6 + 75;
+			}
+			if (grade6 == "C1")
+			{
+				totalSubject6 = totalSubject6 + 70;
+			}
+			if (grade6 == "C2")
+			{
+				totalSubject6 = totalSubject6 + 65;
+			}
+			if (grade6 == "C3")
+			{
+				totalSubject6 = totalSubject6 + 60;
+			}
+			if (grade6 == "D1")
+			{
+				totalSubject6 = totalSubject6 + 55;
+			}
+			if (grade6 == "D2")
+			{
+				totalSubject6 = totalSubject6 + 50;
+			}
+			if (grade6 == "D3")
+			{
+				totalSubject6 = totalSubject6 + 45;
+			}
+			if (grade6 == "E" || grade6 == "F" || grade6 == "NG")
+			{
+				totalSubject6 = totalSubject6 + 0;
+			}
+		}
+
+		if (level6 == "Ordinary")
+		{
+			if (grade6 == "A1")
+			{
+				totalSubject6 = totalSubject6 + 60;
+			}
+			if (grade6 == "A2")
+			{
+				totalSubject6 = totalSubject6 + 50;
+			}
+			if (grade6 == "B1")
+			{
+				totalSubject6 = totalSubject6 + 45;
+			}
+			if (grade6 == "B2")
+			{
+				totalSubject6 = totalSubject6 + 40;
+			}
+			if (grade6 == "B3")
+			{
+				totalSubject6 = totalSubject6 + 35;
+			}
+			if (grade6 == "C1")
+			{
+				totalSubject6 = totalSubject6 + 30;
+			}
+			if (grade6 == "C2")
+			{
+				totalSubject6 = totalSubject6 + 25;
+			}
+			if (grade6 == "C3")
+			{
+				totalSubject6 = totalSubject6 + 20;
+			}
+			if (grade6 == "D1")
+			{
+				totalSubject6 = totalSubject6 + 15;
+			}
+			if (grade6 == "D2")
+			{
+				totalSubject6 = totalSubject6 + 10;
+			}
+			if (grade6 == "D3")
+			{
+				totalSubject6 = totalSubject6 + 5;
+			}
+			if (grade6 == "E" || grade6 == "F" || grade6 == "NG")
+			{
+				totalSubject6 = totalSubject6 + 0;
+			}
+		}
+
+		if (subject6 == "Maths" && level6 == "Foundation")
+		{
+			if (grade6 == "A1")
+			{
+				totalSubject6 = totalSubject6 + 20;
+			}
+			if (grade6 == "A2")
+			{
+				totalSubject6 = totalSubject6 + 15;
+			}
+			if (grade6 == "B1")
+			{
+				totalSubject6 = totalSubject6 + 10;
+			}
+			if (grade6 == "B2")
+			{
+				totalSubject6 = totalSubject6 + 5;
+			}
+			if (grade6 == "B3" || grade6 == "C1" || grade6 == "C2" || grade6 == "C3" || grade6 == "D1" || grade6 == "D2" || grade6 == "D3" || grade6 == "E" || grade6 == "F" || grade6 == "NG")
+			{
+				totalSubject6 = totalSubject6 + 0;
+			}
+		}
+		
+		if (subject6 != "Maths" && level6 == "Foundation")
+		{
+			totalSubject6 = totalSubject6 + 0;
+		}
+	}
+	
+/*--------------------------------subject 7 --------------------------------------*/
+	
+	if (subject7 == "Choose Subject")
+	{
+		totalSubject7 = totalSubject7 + 0;
+	}
+	
+	else if (subject7 == "Maths" && level7 == "Higher")
+	{
+		if (grade7 == "A1")
+		{
+			totalSubject7 = totalSubject7 + 125;
+		}
+		if (grade7 == "A2")
+		{
+			totalSubject7 = totalSubject7 + 115;
+		}
+		if (grade7 == "B1")
+		{
+			totalSubject7 = totalSubject7 + 110;
+		}
+		if (grade7 == "B2")
+		{
+			totalSubject7 = totalSubject7 + 105;
+		}
+		if (grade7 == "B3")
+		{
+			totalSubject7 = totalSubject7 + 100;
+		}
+		if (grade7 == "C1")
+		{
+			totalSubject7 = totalSubject7 + 95;
+		}
+		if (grade7 == "C2")
+		{
+			totalSubject7 = totalSubject7 + 90;
+		}
+		if (grade7 == "C3")
+		{
+			totalSubject7 = totalSubject7 + 85;
+		}
+		if (grade7 == "D1")
+		{
+			totalSubject7 = totalSubject7 + 80;
+		}
+		if (grade7 == "D2")
+		{
+			totalSubject7 = totalSubject7 + 75;
+		}
+		if (grade7 == "D3")
+		{
+			totalSubject7 = totalSubject7 + 70;
+		}
+		if (grade7 == "E" || grade7 == "F" || grade7 == "NG")
+		{
+			totalSubject7 = totalSubject7 + 0;
+		}		
+	}
+	
+	else
+	{
+		if (subject7 != "Maths" && level7 == "Higher")
+		{
+			if (grade7 == "A1")
+			{
+				totalSubject7 = totalSubject7 + 100;
+			}
+			if (grade7 == "A2")
+			{
+				totalSubject7 = totalSubject7 + 90;
+			}
+			if (grade7 == "B1")
+			{
+				totalSubject7 = totalSubject7 + 85;
+			}
+			if (grade7 == "B2")
+			{
+				totalSubject7 = totalSubject7 + 80;
+			}
+			if (grade7 == "B3")
+			{
+				totalSubject7 = totalSubject7 + 75;
+			}
+			if (grade7 == "C1")
+			{
+				totalSubject7 = totalSubject7 + 70;
+			}
+			if (grade7 == "C2")
+			{
+				totalSubject7 = totalSubject7 + 65;
+			}
+			if (grade7 == "C3")
+			{
+				totalSubject7 = totalSubject7 + 60;
+			}
+			if (grade7 == "D1")
+			{
+				totalSubject7 = totalSubject7 + 55;
+			}
+			if (grade7 == "D2")
+			{
+				totalSubject7 = totalSubject7 + 50;
+			}
+			if (grade7 == "D3")
+			{
+				totalSubject7 = totalSubject7 + 45;
+			}
+			if (grade7 == "E" || grade7 == "F" || grade7 == "NG")
+			{
+				totalSubject7 = totalSubject7 + 0;
+			}
+			
+		}
+
+		if (level7 == "Ordinary")
+		{
+			if (grade7 == "A1")
+			{
+				totalSubject7 = totalSubject7 + 60;
+			}
+			if (grade7 == "A2")
+			{
+				totalSubject7 = totalSubject7 + 50;
+			}
+			if (grade7 == "B1")
+			{
+				totalSubject7 = totalSubject7 + 45;
+			}
+			if (grade7 == "B2")
+			{
+				totalSubject7 = totalSubject7 + 40;
+			}
+			if (grade7 == "B3")
+			{
+				totalSubject7 = totalSubject7 + 35;
+			}
+			if (grade7 == "C1")
+			{
+				totalSubject7 = totalSubject7 + 30;
+			}
+			if (grade7 == "C2")
+			{
+				totalSubject7 = totalSubject7 + 25;
+			}
+			if (grade7 == "C3")
+			{
+				totalSubject7 = totalSubject7 + 20;
+			}
+			if (grade7 == "D1")
+			{
+				totalSubject7 = totalSubject7 + 15;
+			}
+			if (grade7 == "D2")
+			{
+				totalSubject7 = totalSubject7 + 10;
+			}
+			if (grade7 == "D3")
+			{
+				totalSubject7 = totalSubject7 + 5;
+			}
+			if (grade7 == "E" || grade7 == "F" || grade7 == "NG")
+			{
+				totalSubject7 = totalSubject7 + 0;
+			}
+			
+		}
+
+		if (subject7 == "Maths" && level7 == "Foundation")
+		{
+			if (grade7 == "A1")
+			{
+				totalSubject7 = totalSubject7 + 20;
+			}
+			if (grade7 == "A2")
+			{
+				totalSubject7 = totalSubject7 + 15;
+			}
+			if (grade7 == "B1")
+			{
+				totalSubject7 = totalSubject7 + 10;
+			}
+			if (grade7 == "B2")
+			{
+				totalSubject7 = totalSubject7 + 5;
+			}
+			if (grade7 == "B3" || grade7 == "C1" || grade7 == "C2" || grade7 == "C3" || grade7 == "D1" || grade7 == "D2" || grade7 == "D3" || grade7 == "E" || grade7 == "F" || grade7 == "NG")
+			{
+				totalSubject7 = totalSubject7 + 0;
+			}
+		}
+		
+		if (subject7 != "Maths" && level7 == "Foundation")
+		{
+			totalSubject7 = totalSubject7 + 0;
+		}
+	}
+	
+	if(lcvp == "LCVP")
+	{
+		if(gradelcvp == "N/A")
+		{
+			totalLCVP = totalLCVP + 0;
+		}
+		if(gradelcvp == "Distinction")
+		{
+			totalLCVP = totalLCVP + 70;
+		}
+		if(gradelcvp == "Merit")
+		{
+			totalLCVP = totalLCVP + 50;
+		}
+		if(gradelcvp == "Pass")
+		{
+			totalLCVP = totalLCVP + 30;
+		}
+		if(gradelcvp == "Unsuccessful")
+		{
+			totalLCVP = totalLCVP + 0;
+		}
+	}
+	
+	var points = [totalSubject1, totalSubject2, totalSubject3, totalSubject4, totalSubject5, totalSubject6,  totalSubject7, totalLCVP]
+	points.sort(function(a,b){return b-a});
+	
+	total = points[0] + points[1] + points[2] + points[3] + points[4] + points[5]
+	
+	// total = totalSubject1 + totalSubject2 + totalSubject3 + totalSubject4 + totalSubject5 + totalSubject6 +  totalSubject7 + totalLCVP
+	frm.total.value = total
+}
+</SCRIPT>
+</HEAD>
+	<body>
+
+		<h1>This is a Heading</h1>
+
+		<form method="post" action="demo_form.asp">
+			<table id="myTable">
+				<tr>
+					<th>Subject</th> 
+					<th>Level</th> 
+					<th>Grade</th>
+				</tr>
+
+				<tr>
+					<td><select name="Subject1">
+									<option value="Choose Subject" selected="selected" >Choose Subject</option>
+									<option value="English">English</option>
+									<option value="Irish">Irish</option>
+									<option value="Maths">Maths</option>
+									<option value="Spanish">Spanish</option>
+									<option value="French">French</option>
+									<option value="German">German</option>
+									<option value="Business">Business</option>
+									<option value="Accounting">Accounting</option>
+									<option value="Economics">Economics</option>
+									<option value="History">History</option>
+									<option value="Geography">Geography</option>
+									<option value="Biology">Biology</option>
+									<option value="Physics">Physics</option>
+									<option value="Chemistry">Chemistry</option>>
+									<option value="Ag Science">Ag. Science</option>
+									<option value="Tech Drawing">Tech Drawing</option>
+									<option value="Woodwork">Woodwork</option>
+									<option value="Engineering">Engineering</option>
+									<option value="Home Ec.">Home Ec.</option>
+									<option value="Religion">Religion</option>
+									<option value="Art">Art</option>
+									<option value="Music">Music</option>
+									<option value="Other">Other</option>
+							</select></td>
+
+						<td><select name="Level1">
+									<option value="Higher" selected="selected">Higher</option>
+									<option value="Ordinary">Ordinary</option>
+									<option value="Foundation">Foundation</option>
+							</select></td>	
+								
+						<td><select name="Grade1">
+									<option value="A1" selected="selected">A1</option>
+									<option value="A2">A2</option>
+									<option value="B1">B1</option>
+									<option value="B2">B2</option>
+									<option value="B3">B3</option>
+									<option value="C1">C1</option>
+									<option value="C2">C2</option>
+									<option value="C3">C3</option>
+									<option value="D1">D1</option>
+									<option value="D2">D2</option>
+									<option value="D3">D3</option>
+									<option value="E">E</option>
+									<option value="F">F</option>
+									<option value="NG">NG</option>            
+							</select></td>
+
+					</tr>
+
+					<tr>
+						<td><select name="Subject2">
+									<option value="Choose Subject" selected="selected" >Choose Subject</option>
+									<option value="English">English</option>
+									<option value="Irish">Irish</option>
+									<option value="Maths">Maths</option>
+									<option value="Spanish">Spanish</option>
+									<option value="French">French</option>
+									<option value="German">German</option>
+									<option value="Business">Business</option>
+									<option value="Accounting">Accounting</option>
+									<option value="Economics">Economics</option>
+									<option value="History">History</option>
+									<option value="Geography">Geography</option>
+									<option value="Biology">Biology</option>
+									<option value="Physics">Physics</option>
+									<option value="Chemistry">Chemistry</option>>
+									<option value="Ag Science">Ag. Science</option>
+									<option value="Tech Drawing">Tech Drawing</option>
+									<option value="Woodwork">Woodwork</option>
+									<option value="Engineering">Engineering</option>
+									<option value="Home Ec.">Home Ec.</option>
+									<option value="Religion">Religion</option>
+									<option value="Art">Art</option>
+									<option value="Music">Music</option>
+									<option value="Other">Other</option>
+							</select></td>
+
+						<td><select name="Level2">
+									<option value="Higher" selected="selected">Higher</option>
+									<option value="Ordinary">Ordinary</option>
+									<option value="Foundation">Foundation</option>
+							</select></td>	
+								
+						<td><select name="Grade2">
+									<option value="A1" selected="selected">A1</option>
+									<option value="A2">A2</option>
+									<option value="B1">B1</option>
+									<option value="B2">B2</option>
+									<option value="B3">B3</option>
+									<option value="C1">C1</option>
+									<option value="C2">C2</option>
+									<option value="C3">C3</option>
+									<option value="D1">D1</option>
+									<option value="D2">D2</option>
+									<option value="D3">D3</option>
+									<option value="E">E</option>
+									<option value="F">F</option>
+									<option value="NG">NG</option>            
+							</select></td>
+					</tr>
+
+					<tr>
+						<td><select name="Subject3">
+									<option value="Choose Subject" selected="selected" >Choose Subject</option>
+									<option value="English">English</option>
+									<option value="Irish">Irish</option>
+									<option value="Maths">Maths</option>
+									<option value="Spanish">Spanish</option>
+									<option value="French">French</option>
+									<option value="German">German</option>
+									<option value="Business">Business</option>
+									<option value="Accounting">Accounting</option>
+									<option value="Economics">Economics</option>
+									<option value="History">History</option>
+									<option value="Geography">Geography</option>
+									<option value="Biology">Biology</option>
+									<option value="Physics">Physics</option>
+									<option value="Chemistry">Chemistry</option>>
+									<option value="Ag Science">Ag. Science</option>
+									<option value="Tech Drawing">Tech Drawing</option>
+									<option value="Woodwork">Woodwork</option>
+									<option value="Engineering">Engineering</option>
+									<option value="Home Ec.">Home Ec.</option>
+									<option value="Religion">Religion</option>
+									<option value="Art">Art</option>
+									<option value="Music">Music</option>
+									<option value="Other">Other</option>
+							</select></td>
+
+						<td><select name="Level3">
+									<option value="Higher" selected="selected">Higher</option>
+									<option value="Ordinary">Ordinary</option>
+									<option value="Foundation">Foundation</option>
+							</select></td>	
+								
+						<td><select name="Grade3">
+									<option value="A1" selected="selected">A1</option>
+									<option value="A2">A2</option>
+									<option value="B1">B1</option>
+									<option value="B2">B2</option>
+									<option value="B3">B3</option>
+									<option value="C1">C1</option>
+									<option value="C2">C2</option>
+									<option value="C3">C3</option>
+									<option value="D1">D1</option>
+									<option value="D2">D2</option>
+									<option value="D3">D3</option>
+									<option value="E">E</option>
+									<option value="F">F</option>
+									<option value="NG">NG</option>            
+							</select></td>
+					</tr>
+
+					<tr>
+						<td><select name="Subject4">
+									<option value="Choose Subject" selected="selected" >Choose Subject</option>
+									<option value="English">English</option>
+									<option value="Irish">Irish</option>
+									<option value="Maths">Maths</option>
+									<option value="Spanish">Spanish</option>
+									<option value="French">French</option>
+									<option value="German">German</option>
+									<option value="Business">Business</option>
+									<option value="Accounting">Accounting</option>
+									<option value="Economics">Economics</option>
+									<option value="History">History</option>
+									<option value="Geography">Geography</option>
+									<option value="Biology">Biology</option>
+									<option value="Physics">Physics</option>
+									<option value="Chemistry">Chemistry</option>>
+									<option value="Ag Science">Ag. Science</option>
+									<option value="Tech Drawing">Tech Drawing</option>
+									<option value="Woodwork">Woodwork</option>
+									<option value="Engineering">Engineering</option>
+									<option value="Home Ec.">Home Ec.</option>
+									<option value="Religion">Religion</option>
+									<option value="Art">Art</option>
+									<option value="Music">Music</option>
+									<option value="Other">Other</option>
+							</select></td>
+
+						<td><select name="Level4">
+									<option value="Higher" selected="selected">Higher</option>
+									<option value="Ordinary">Ordinary</option>
+									<option value="Foundation">Foundation</option>
+							</select></td>	
+								
+						<td><select name="Grade4">
+									<option value="A1" selected="selected">A1</option>
+									<option value="A2">A2</option>
+									<option value="B1">B1</option>
+									<option value="B2">B2</option>
+									<option value="B3">B3</option>
+									<option value="C1">C1</option>
+									<option value="C2">C2</option>
+									<option value="C3">C3</option>
+									<option value="D1">D1</option>
+									<option value="D2">D2</option>
+									<option value="D3">D3</option>
+									<option value="E">E</option>
+									<option value="F">F</option>
+									<option value="NG">NG</option>            
+							</select></td>
+					</tr>
+
+					<tr>
+						<td><select name="Subject5">
+									<option value="Choose Subject" selected="selected" >Choose Subject</option>
+									<option value="English">English</option>
+									<option value="Irish">Irish</option>
+									<option value="Maths">Maths</option>
+									<option value="Spanish">Spanish</option>
+									<option value="French">French</option>
+									<option value="German">German</option>
+									<option value="Business">Business</option>
+									<option value="Accounting">Accounting</option>
+									<option value="Economics">Economics</option>
+									<option value="History">History</option>
+									<option value="Geography">Geography</option>
+									<option value="Biology">Biology</option>
+									<option value="Physics">Physics</option>
+									<option value="Chemistry">Chemistry</option>>
+									<option value="Ag Science">Ag. Science</option>
+									<option value="Tech Drawing">Tech Drawing</option>
+									<option value="Woodwork">Woodwork</option>
+									<option value="Engineering">Engineering</option>
+									<option value="Home Ec.">Home Ec.</option>
+									<option value="Religion">Religion</option>
+									<option value="Art">Art</option>
+									<option value="Music">Music</option>
+									<option value="Other">Other</option>
+							</select></td>
+
+						<td><select name="Level5">
+									<option value="Higher" selected="selected">Higher</option>
+									<option value="Ordinary">Ordinary</option>
+									<option value="Foundation">Foundation</option>
+							</select></td>	
+								
+						<td><select name="Grade5">
+									<option value="A1" selected="selected">A1</option>
+									<option value="A2">A2</option>
+									<option value="B1">B1</option>
+									<option value="B2">B2</option>
+									<option value="B3">B3</option>
+									<option value="C1">C1</option>
+									<option value="C2">C2</option>
+									<option value="C3">C3</option>
+									<option value="D1">D1</option>
+									<option value="D2">D2</option>
+									<option value="D3">D3</option>
+									<option value="E">E</option>
+									<option value="F">F</option>
+									<option value="NG">NG</option>            
+							</select></td>
+					</tr>
+
+					<tr>
+						<td><select name="Subject6">
+									<option value="Choose Subject" selected="selected" >Choose Subject</option>
+									<option value="English">English</option>
+									<option value="Irish" >Irish</option>
+									<option value="Maths">Maths</option>
+									<option value="Spanish">Spanish</option>
+									<option value="French">French</option>
+									<option value="German">German</option>
+									<option value="Business">Business</option>
+									<option value="Accounting">Accounting</option>
+									<option value="Economics">Economics</option>
+									<option value="History">History</option>
+									<option value="Geography">Geography</option>
+									<option value="Biology">Biology</option>
+									<option value="Physics">Physics</option>
+									<option value="Chemistry">Chemistry</option>>
+									<option value="Ag Science">Ag. Science</option>
+									<option value="Tech Drawing">Tech Drawing</option>
+									<option value="Woodwork" >Woodwork</option>
+									<option value="Engineering">Engineering</option>
+									<option value="Home Ec.">Home Ec.</option>
+									<option value="Religion">Religion</option>
+									<option value="Art">Art</option>
+									<option value="Music">Music</option>
+									<option value="Other">Other</option>
+							</select></td>
+
+						<td><select name="Level6">
+									<option value="Higher" selected="selected">Higher</option>
+									<option value="Ordinary">Ordinary</option>
+									<option value="Foundation">Foundation</option>
+							</select></td>	
+								
+						<td><select name="Grade6">
+									<option value="A1" selected="selected">A1</option>
+									<option value="A2">A2</option>
+									<option value="B1">B1</option>
+									<option value="B2">B2</option>
+									<option value="B3">B3</option>
+									<option value="C1">C1</option>
+									<option value="C2">C2</option>
+									<option value="C3">C3</option>
+									<option value="D1">D1</option>
+									<option value="D2">D2</option>
+									<option value="D3">D3</option>
+									<option value="E">E</option>
+									<option value="F">F</option>
+									<option value="NG">NG</option>            
+							</select></td>
+					</tr>
+					
+					<tr>
+						<td><select name="Subject7">
+									<option value="Choose Subject" selected="selected" >Choose Subject</option>
+									<option value="English">English</option>
+									<option value="Irish" >Irish</option>
+									<option value="Maths">Maths</option>
+									<option value="Spanish">Spanish</option>
+									<option value="French">French</option>
+									<option value="German">German</option>
+									<option value="Business">Business</option>
+									<option value="Accounting">Accounting</option>
+									<option value="Economics">Economics</option>
+									<option value="History">History</option>
+									<option value="Geography">Geography</option>
+									<option value="Biology">Biology</option>
+									<option value="Physics">Physics</option>
+									<option value="Chemistry">Chemistry</option>>
+									<option value="Ag Science">Ag. Science</option>
+									<option value="Tech Drawing">Tech Drawing</option>
+									<option value="Woodwork">Woodwork</option>
+									<option value="Engineering">Engineering</option>
+									<option value="Home Ec.">Home Ec.</option>
+									<option value="Religion">Religion</option>
+									<option value="Art">Art</option>
+									<option value="Music">Music</option>
+									<option value="Other">Other</option>
+							</select></td>
+
+						<td><select name="Level7">
+									<option value="Higher" selected="selected">Higher</option>
+									<option value="Ordinary">Ordinary</option>
+									<option value="Foundation">Foundation</option>
+							</select></td>	
+								
+						<td><select name="Grade7">
+									<option value="A1" selected="selected">A1</option>
+									<option value="A2">A2</option>
+									<option value="B1">B1</option>
+									<option value="B2">B2</option>
+									<option value="B3">B3</option>
+									<option value="C1">C1</option>
+									<option value="C2">C2</option>
+									<option value="C3">C3</option>
+									<option value="D1">D1</option>
+									<option value="D2">D2</option>
+									<option value="D3">D3</option>
+									<option value="E">E</option>
+									<option value="F">F</option>
+									<option value="NG">NG</option>            
+							</select></td>
+					</tr>
+					
+					<tr>
+						<td><select name="LCVP">
+									<option value="LCVP" selected="selected" >LCVP</option>
+							</select></td>	
+								
+						<td colspan="2"><select name="GradeLCVP">
+									<option value="N/A" selected="selected">N/A</option>
+									<option value="Distinction">Distinction</option>
+									<option value="Merit">Merit</option>
+									<option value="Pass">Pass</option>
+									<option value="Unsuccessful">Unsuccessful</option>           
+							</select></td>
+					</tr>	
+
+					<tr>
+						<td colspan="3">
+						<input type="button" name="Button" value="Calculate Points" onClick="calculateTotal(this.form)">
+						<input type="text" name="total" size="10" maxlength="10">
+						</td>
+					</tr>
+
+			</table>
+		</form>
+	</body>
+</html>
